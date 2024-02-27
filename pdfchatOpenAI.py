@@ -84,7 +84,7 @@ def main():
     user_question = st.text_input("Question")
 
     if user_question:
-        user_input(user_question+)
+        user_input(user_question)
 
     with st.sidebar:
         st.title("PDF upload")
