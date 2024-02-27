@@ -12,8 +12,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 os.getenv("OPENAI_API_KEY")
-#genai.configure(api_key=os.getenv("OPENAI_API_KEY"))
-#os.environ["OPENAI_API_KEY"] = "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"
 
 
 def get_pdf_text(pdf_docs):
