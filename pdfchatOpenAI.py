@@ -78,17 +78,16 @@ def user_input(user_question):
 
 
 def main():
-    st.set_page_config("Chat PDF OpenAI")
-    st.header("OpenAI")
+    st.set_page_config("PDF chatbot")
+    st.header("AI will help you answer all your questions from the PDF")
 
-    user_question = st.text_input("Job Description")
-    user_prompt = st.text_input("Prompt")
+    user_question = st.text_input("Question")
 
-    if user_question and user_prompt:
-        user_input(user_question+". "+user_prompt)
+    if user_question:
+        user_input(user_question+)
 
     with st.sidebar:
-        st.title("Sidebar")
+        st.title("PDF upload")
         pdf_docs = st.file_uploader("", accept_multiple_files=True)
         if st.button("Process"):
             with st.spinner("Processing..."):
